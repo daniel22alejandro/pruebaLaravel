@@ -12,8 +12,7 @@ class RegisterController extends Controller
     }
 
     public function store(Request $request){
-        //Vamos a crear el proceso de validacion
-        $request->request->add(['cedula'=>Str::slug($request->cedula)]);
+    
 
         $this->validate($request,[
             'name'=>'required|min:3|max:50',

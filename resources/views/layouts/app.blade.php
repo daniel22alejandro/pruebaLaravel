@@ -7,29 +7,23 @@
 
     <title>Laravel</title>
 </head>
-<body class="bg-gray-100">
+<body class="font-sans bg-gray-100">
 
-<header class="flex items-center justify-between border-b p-5 bg-white  shadow">
+<header class="bg-blue-500 text-white p-5 shadow">
     <h1 class="text-3xl font-bold">Prueba Laravel</h1>
-    <nav>
-        <a href="{{ route('register.index') }}"
-           class="uppercase text-gray-600 font-bold text-small">
-            registro
-        </a>
-        <a href="/"
-        class="uppercase text-gray-600 font-bold text-small">
-         inicio
-     </a>
+    <nav class="space-x-4">
+        <a href="{{ route('register.index') }}" class="uppercase font-bold text-sm">Registro</a>
+        <a href="/" class="uppercase font-bold text-sm">Inicio</a>
     </nav>
 </header>
-<main class="container mx-auto mt-10 ">
-    <h2 class="font-black text-center text-3xl mb-10">
-        @yield('titulo')
-    </h2>
+
+<main class="container mx-auto mt-10">
+    <h2 class="font-bold text-center text-3xl mb-10">@yield('titulo')</h2>
     @yield('contenido')
 </main>
-<footer class="text-center p-5 text-gray-500 font-bold uppercase">
-    Todos los derechos reservados  {{ date('Y') }}
-</footer>
+
+    
+
 </body>
 </html>
+

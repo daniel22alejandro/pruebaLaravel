@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('titulo')
-    Hola mundo desde principal
+    Hola Gente, ayudenme a hacer un crud en esta monda
 @endsection
 
 
